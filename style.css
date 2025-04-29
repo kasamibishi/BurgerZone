@@ -6,14 +6,18 @@
   box-sizing: border-box;
 }
 
+body
+{
+  background-color: green;
+}
+
 /*Header*/
 header
 {
   width: 100%;
-  height: fit-content;
 }
 
-#header
+#header, .article
 {
   width: 100%;
 }

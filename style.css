@@ -1,0 +1,19 @@
+/*All*/
+*
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header
+{
+  width: 100%;
+  height: fit-content;
+}
+
+#header
+{
+  width: 100%;
+}

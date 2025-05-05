@@ -13,33 +13,33 @@ body
   background-color: green;
 }
 
-/*Header*/
-header
+/*NavBar*/
+nav
 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  position: relative;
   width: 100%;
-  height: 315px;
-  margin-bottom: 15px;
+  height: 100px;
+  background-color: rgb(29, 89, 30);
+  margin-bottom: 20px;
+  border: solid black;
+  border-width: 0px 0px 3px;
 }
 
-#logo
+#back
 {
-  width: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 75px;
 }
 
-#num
+#slogo
 {
-  margin: 11px 0px;
-}
-
-#wifi
-{
-  padding: 10px 15px;
-  background-color: black;
-  border-radius: 15px;
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  transform: translateX(-95%) translateY(-50%);
+  height: 75px;
 }
 
 /*Article*/
@@ -53,13 +53,14 @@ article
 
 .art
 {
-  position: relative;
   text-align: center;
   background-color: rgb(29, 89, 30);
   width: 250px;
   height: 75px;
   border: solid 4px black;
   border-radius: 15px;
+  margin-bottom: 20px;
+  transition: 0.7s ease-in-out;
 }
 
 .prod
@@ -67,6 +68,7 @@ article
   opacity: 0;
   width: 175px;
   height: 0px;
+  transition: 0.7s ease-in-out;
 }
 
 .link
@@ -76,14 +78,15 @@ article
 
 .arthead
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  text-decoration: none;
 }
 
-.space
+.art:hover  
 {
-  height: 20px;
-  width: 100%;
+  height: 250px;
+  .prod
+  {
+    opacity: 100;
+    height: 175px;
+  }
 }

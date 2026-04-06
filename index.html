@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-  <nav>
+  <nav class="main-nav">
     <div class="nav-left">
       <img src="images/logo.jpg" alt="Burger Zone Logo">
     </div>
@@ -19,7 +19,7 @@
     </div>
   </nav>
 
-  <h2 style="margin-left: 30px; margin-top: 10px;">Suggested Burgers</h2>
+  <h2 style="margin-left: 30px; margin-top: 20px; margin-bottom: 0px;">Featured Burgers</h2>
 
   <div class="featured-swimlane">
     <div class="featured-card">
@@ -48,6 +48,29 @@
       </div>
     </div>
   </div>
+
+  <nav class="category">
+    <p class="categorys active" data-target="burgers">Burgers</p>
+    <p class="categorys" data-target="drinks">Drinks</p>
+    <p class="categorys" data-target="extras">Extras</p>
+  </nav>
+
+  <main>
+  <section id="burgers" class="category-section active">
+    <h2>Burgers</h2>
+    <p>Classic Burger, Cheeseburger, Bacon Burger.</p>
+  </section>
+  
+  <section id="drinks" class="category-section">
+    <h2>Drinks</h2>
+    <p>Espresso, Cappuccino, Flat White.</p>
+  </section>
+  
+  <section id="extras" class="category-section">
+    <h2>Extras</h2>
+    <p>Fries, Onion Rings.</p>
+  </section>
+</main>
 
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

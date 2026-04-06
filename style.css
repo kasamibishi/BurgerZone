@@ -23,7 +23,7 @@ button, .price
 }
 
 /* Nav */
-nav
+.main-nav 
 {
   position: relative;
   display: flex;
@@ -97,4 +97,37 @@ img
 .card-info h3 {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
+}
+
+/*Category Nav*/
+.category
+{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0px;
+}
+
+.categorys
+{
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.categorys.active
+{
+  color: #212529;
+  border-bottom: 4px solid #E65C00;
+}
+
+/*Main Content*/
+.category-section {
+  display: none;
+}
+
+.category-section.active {
+  display: block;
 }

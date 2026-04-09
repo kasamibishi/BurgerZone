@@ -131,3 +131,22 @@ img
 .category-section.active {
   display: block;
 }
+
+.section
+{
+  display: flex;
+  gap: 1rem;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border-bottom: 1px solid #e2dcd8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-image
+{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}

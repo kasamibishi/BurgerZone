@@ -150,3 +150,15 @@ img
   object-fit: cover;
   border-radius: 12px;
 }
+
+.item-name
+{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.price
+{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
